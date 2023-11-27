@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Student.xsl" ?>
+<students>
+  <student>
+    <name>Akshay</name>
+    <age>20</age>
+    <gender>Male</gender>
+    <major>Computer Science</major>
+  </student>
+  <student>
+    <name>Aakash</name>
+    <age>21</age>
+    <gender>Female</gender>
+    <major>Computer</major>
+  </student>
+  <student>
+    <name>Anish Bonde</name>
+    <age>19</age>
+    <gender>Male</gender>
+    <major>Computer</major>
+  </student>
+</students>

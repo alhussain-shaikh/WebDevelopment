@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VIT Student Results</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>VIT Student Results</h1>
+
+    <form action="add_student.php" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" required><br>
+    
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" required><br>
+    
+        <label for="registration_number">Registration Number:</label>
+        <input type="text" name="registration_number" required><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" name="email"><br>
+    
+        <input type="submit" value="Add Student">
+    </form>
+    <br>
+    <br>
+    <br>
+
+    <form action="add_result.php" method="post">
+        <label for="student_id">Student ID:</label>
+        <input type="text" name="student_id" required><br>
+    
+        <label for="subject_name">Subject Name:</label>
+        <input type="text" name="subject_name" required><br>
+    
+        <label for="mse_marks">MSE Marks:</label>
+        <input type="text" name="mse_marks" required><br>
+    
+        <label for="ese_marks">ESE Marks:</label>
+        <input type="text" name="ese_marks" required><br>
+    
+        <input type="submit" value="Add Result">
+    </form> 
+    <table id="results-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Registration Number</th>
+                <th>Subject</th>
+                <th>MSE Marks</th>
+                <th>ESE Marks</th>
+                <th>Total Marks</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

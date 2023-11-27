@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="books.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="books.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="books.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
+    <!--navbar-->
+    <nav class="navbar glass" style="height: 70px;">
+        <span><a href="#home" style="display:flex; align-items: center;"><img class="img2" src="books.png" width="40"
+            style="margin: -25px -10px -25px -20px"><h1 class="logo">&nbsp;BookLust</h1></a></span>
+        <ul class="nav-links">
+            <li><a href="#home" id="pri" class="active cir_border">Home</a></li>
+            <!-- <li><a href="#events"  id="sec" class="cir_border">Tours</a></li>
+            <li><a href="booking.html" id="hex" class="cir_border">Booking</a></li>
+            <li><a href="#contribution" id="tri" class="cir_border">Explore</a></li>
+            <li><a href="#about" id="quad" class="cir_border">Packages</a></li> -->
+            <li><a href="Login.html" id="quint" class="cir_border">Login</a></li>
+            <!-- <li><a href="#contact" id="hex" class="cir_border">Contact</a></li> -->
+            <li><div>
+                <input type="checkbox" class="checkbox dark" id="checkbox">
+              <label for="checkbox" class="label">
+                <i class="fa fa-moon-o"></i>
+                <i class='fa fa-sun-o'></i>
+                <div class='ball'>
+              </label>
+            </div></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <!--navbar-->
+
+    <header id="home">
+        <div class="header-content">
+            <video src="./lib2.mp4" type="video/mp4" autoplay muted loop></video>
+            <h2  id="quote">The world is a book, and those who do not travel read only a page.</h2>
+            <div class="line"></div>
+            <h1 >A BOOKFUL GIFT </h1>
+            <a href="#about" class="ctn" onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'>Learn more</a>
+        </div>
+    </header>
+
+    <!--Events-->
+    <section class="events" id="events">
+        <div class="container">
+            <div class="title">
+                <h1 class="dark">Famous Authors</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row-container">
+                <div class="row">
+                    <article class="card col">
+                        <img class="card-img" src="./img/shakespeare.jpg">
+                        <h4 class="dark">William Shakespeare</h4>
+                        <p class="font-color">William Shakespeare was an English playwright, poet and actor. He is widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist.</p>
+                        <a href="/tour_details.html" class="ctn">All Details</a>
+                    </article>
+                    <article class="card col">
+                        <img src="./img/jk.jpg">
+                        <h4 class="dark">Jk Rowling </h4>
+                        <p class="font-color">Joanne Rowling CH OBE FRSL, best known by her pen name J. K. Rowling, is a British author and philanthropist. She wrote Harry Potter, a seven-volume children's fantasy series published from 1997 to 2007.</p>
+                        <a href="/tour_details.html" class="ctn">All Details</a>
+                    </article>
+                    <article class="card col">
+                        <img src="./img/R.jpeg">
+                        <h4 class="dark">Steve Jobs</h4>
+                        <p class="font-color">Steven Paul Jobs was an American business magnate, inventor, and investor. He was the co-founder, chairman, and CEO of Apple; the chairman and majority shareholder of Pixar.</p>
+                        <a href="/tour_details.html" class="ctn">All Details</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Events-->
+
+    <!--Explore-->
+    <section class="explore" id="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE BOOK WORLD</h1>
+            <div class="line"></div>
+            <p>“The world is a book, and those who do not travel read only a page.”– Gustav Flaubert
+            </br>Exploring will make you want to pack your bag, book that ticket and jet away. </p>
+            <a href="#" class="ctn">Explore more</a>
+        </div>
+    </section>
+    <!--Explore-->
+
+    <!-- About -->
+    <section id="about">
+        <div class="title">
+            <h1 class="font-color">Book Festivals</h1>
+            <div class="line"></div>
+        </div>
+        <br>
+
+        <div class="package-content">
+        
+            <div class="box">
+                <div class="image">
+                    <img src="./img/book1.jpg" alt="">
+                    <h3></h3>
+                </div>
+            
+            <div class="dest-content">
+                <div class="location">
+                    <h4>Book Fest Pune</h4>
+                    <ul class="pac-details">
+                        <li >All Categories Books</li>
+                        <li>Author Signed </li>
+                        <li>10% Discount Also </li>
+                        <li>Timing 11am -10pm</li>
+                        <li>For Contact 123456789</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            
+            <div class="box">
+                <div class="image">
+                    <img src="./img/emirates.png" alt="">
+                    <h3></h3>
+                </div>
+            
+            <div class="dest-content">
+                <div class="location">
+                    <h4>Book Fest Emirates</h4>
+                    <ul class="pac-details">
+                        <li >All Categories Books</li>
+                        <li>Author Signed </li>
+                        <li>10% Discount Also </li>
+                        <li>Timing 11am -10pm</li>
+                        <li>For Contact 123456789</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="./img/Jaipur.jpg" alt="">
+                    <h3></h3>
+                </div>
+            
+            <div class="dest-content">
+                <div class="location">
+                    <h4>Book Fest Jaipur</h4>
+                    <ul class="pac-details">
+                        <li >All Categories Books</li>
+                        <li>Author Signed </li>
+                        <li>10% Discount Also </li>
+                        <li>Timing 11am -10pm</li>
+                        <li>For Contact 123456789</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="./img/p4.jpg" alt="">
+                    <h3></h3>
+                </div>
+            
+            <div class="dest-content">
+                <div class="location">
+                    <h4>Book Fest Mumbai</h4>
+                    <ul class="pac-details">
+                        <li >All Categories Books</li>
+                        <li>Author Signed </li>
+                        <li>10% Discount Also </li>
+                        <li>Timing 11am -10pm</li>
+                        <li>For Contact 123456789</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+    
+        </div>
+    </section>
+    <!-- About -->
+
+    <!-- Location -->
+    <div class="title">
+        <h1 class="font-color">Latest Books</h1>
+        <div class="line"></div>
+    </div>
+    <section id="contribution">
+
+        <div class="location-content">
+        
+            <a href="./locations.html#kashmir" target="_blank"><div class="col-content">
+                <img src="./img/book1.png" alt="">
+                <h5>A tale of </h5>
+                <p>Two Cities</p>
+            </div></a>
+    
+           
+    
+            <a href="./locations.html#istanbul" target="_blank"><div class="col-content">
+                <img src="./img/book2.png" alt="">
+                <h5>The Lord Of </h5>
+                <p>The Rings</p>
+            </div></a>
+    
+            <a href="./locations.html#paris" target="_blank"><div class="col-content">
+                <img src="./img/book3.png" alt="">
+                <h5>The Hobit</h5>
+                <p>JRR Tolkiens</p>
+            </div></a>
+    
+            <a href="./locations.html#bali" target="_blank"><div class="col-content">
+                <img src="./img/book4.png" alt="">
+                <h5>Harry</h5>
+                <p>Potter</p>
+            </div></a>
+    
+            <a href="./locations.html#dubai" target="_blank"><div class="col-content">
+                <img src="./img/book5.png" alt="">
+                <h5>The Lion,The Witch and </h5>
+                <p>The Wardrobe</p>
+            </div></a>
+    
+            <a href="./locations.html#geneva" target="_blank"><div class="col-content">
+                <img src="./img/book6.png" alt="">
+                <h5>She</h5>
+                <p>The History Of Advanture</p>
+            </div></a>
+    
+            <a href="./locations.html#port-blair" target="_blank"><div class="col-content">
+                <img src="./img/book1.jpg" alt="">
+                <h5>Book </h5>
+                <p>Back</p>
+            </div></a>
+    
+            <a href="./locations.html#rome" target="_blank"><div class="col-content">
+                <img src="./img/book8.png" alt="">
+                <h5>The Advanture Of</h5>
+                <p>Pinocchio</p>
+            </div></a>
+
+            <a href="./locations.html#rome" target="_blank"><div class="col-content">
+                <img src="./img/book9.png" alt="">
+                <h5>Dan Brown</h5>
+                <p>Author of Origin</p>
+            </div></a>
+    
+        </div>
+    </section>
+    <!-- Locations -->
+
+
+
+    <!-- contact -->
+    <!-- <section id="contact">
+        <div class="title">
+            <h1 class="font-color">Contact Us</h1>
+            <div class="line"></div>
+        </div>
+        <div class="contact_us">
+            <form class="cform" action="" method="post">
+                <div class="crow-message">
+                    <h1 class="color">Send us a message</h1>
+                    <div></div>
+                </div>
+                <div class="crow-in">
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                        <input type="text" id="email" name="email" placeholder="Your Email id">
+                </div>
+                <div class="crow">
+                    <div class="ccol-left">
+                        <select name="country" id="country">
+                            <option value="India">India</option>
+                            <option value="Russia">Russia</option>
+                            <option value="usa">USA</option>
+                            <option value="Japan">Japan</option>
+                            <option value="France">France</option>
+                            <option value="Brazil">Brazil</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="crow">
+                    <div class="ccol-left">
+                        <textarea type="text" id="remarks" name="remarks" placeholder="Your Remarks....." style="height: 150px;"></textarea>
+                    </div>
+                </div>
+                <input class="crow-s" type="submit" value="Submit">
+            </form>
+            <div class="cbox">
+                <div>
+                    <p class="cbox-message">Prefer some other way ?<br>Reach us by using the details given below</p>
+                <div class="cbox-line"></div>
+                </div>
+                <div class="c_boxx">
+                    <a href="mailto:abc@gmail.com"><i class="fa fa-envelope"></i>
+                        Mail: tourism@adventure.com
+                    </a>
+                </div>
+                <div class="c_boxx">
+                    <a href="tel:+91-12345-67890"><i class="fa fa-phone"></i>
+                        Phone: (+91) 12345-67890
+                    </a>
+                </div>
+                <div class="c_boxx">
+                    <a href="#"><i class="fa fa-map-marker"></i>
+                        Location: Pune,Maharashtra ,India
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- contact  -->
+    <!-- up scroll -->
+    <i class="fa fa-chevron-up" onclick="topFunction()" id="upbtn"></i>
+    <!-- end -->
+    <!--footer-->
+    <section class="footer">
+        <span>Created By A9 Group  | &#169 2022 All rights reserved.</span>
+        <div class="social">
+            <li>
+                <a href="https://alhussain-shaikh.github.io/AlhussainPortfolio.github.io/" target="_blank" rel="noreferrer"><i class="fa fa-globe"></i></a>
+                <a href="https://github.com/alhussain-shaikh" target="_blank" rel="noreferrer"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/al-hussain-shaikh-033729231/" target="_blank" rel="noreferrer"><i class="fa fa-linkedin-square"></i></a>
+            </li>
+        </div>
+    </section>
+    <!--footer-->
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
